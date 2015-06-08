@@ -31,24 +31,31 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/en">The Modern Organization</a>
+      <a class="navbar-brand" href="/en/">The Modern Organization</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/en">Articles <span class="sr-only">(current)</span></a></li>
+        <li><a href="/en/">Articles <span class="sr-only">(current)</span></a></li>
         <li><a href="/en/coaches.html">Coaches</a></li>
         <li><a href="/en/good-practices.html">Practices</a></li>
         <li><a href="/en/events.html">Events</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><a href="/en/contribute.html">Contribute</a></li>
         <li><a href="/en/about.html">About</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
+<script>
+    $(document).ready(function() {
+        $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    });
+</script>
+	
 	<h1>Is it wise to focus on short-lived skills and knowledge?</h1>
 	
 	Once in a while I get emails from recruiters that read like this example:

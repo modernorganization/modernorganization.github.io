@@ -1,1 +1,120 @@
-Der Vortrag zur &#8220;System-Veränderung von innen&#8221; fand im kurzem Abstand an zwei unterschiedlichen Orten statt. Demnach individuell waren die Reaktionen. Es war eine Reise quer durch das Gebiet der komplexen Systeme und dessen was dahinter steckt. Das Ziel war es, sich von Lösungen, Best practices und Checklisten zu distanzieren und einen Einblick in das schrittweise [&#8230;]
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Nachtrag zur Session “Systemveränderung von innen”</title>
+
+	<link rel="canonical" href="http://www.agile-is-limit.de/nachtrag-zur-session-systemveraenderung-von-innen/"/>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="/css/main.css">
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+	<div class="container">
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/de/">Die moderne Organisation</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/de/">Artikel <span class="sr-only">(current)</span></a></li>
+        <li><a href="/de/coaches.html">Coaches</a></li>
+        <li><a href="/de/good-practices.html">Praktiken</a></li>
+        <li><a href="/de/events.html">Veranstaltungen</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/de/contribute.html">Beitragen</a></li>
+        <li><a href="/de/about.html">Impressum</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<script>
+    $(document).ready(function() {
+        $('a[href="' + this.location.pathname + '"]').parent().addClass('active');
+    });
+</script>
+	
+	<h1>Nachtrag zur Session “Systemveränderung von innen”</h1>
+	
+	Der Vortrag zur &#8220;System-Veränderung von innen&#8221; fand im kurzem Abstand an zwei unterschiedlichen Orten statt. Demnach individuell waren die Reaktionen. Es war eine Reise quer durch das Gebiet der komplexen Systeme und dessen was dahinter steckt. Das Ziel war es, sich von Lösungen, Best practices und Checklisten zu distanzieren und einen Einblick in das schrittweise [&#8230;]
+
+	<p>&nbsp;</p>
+	
+	<p><a href="http://www.agile-is-limit.de/nachtrag-zur-session-systemveraenderung-von-innen/"><strong>Den vollständigen Artikel an der Quelle aufrufen und lesen ...</strong></a></p>
+
+	<p>&nbsp;</p>
+	<center>
+	<table class="authorProfile">
+		<tr>
+			<td rowspan="6"><img id="personImage" src=""/></td>
+			<td><span id="personName"/></td>
+		</tr>
+		<tr>
+			<td><span id="personPhone"/></td>
+		</tr>
+		<tr>
+			<td><a id="personMailUrl"><span id="personMail"/></a></td>
+		</tr>
+		<tr>
+			<td><a id="personUrl"><span id="personUrlTitle"/></a></td>
+		</tr>
+		<tr>
+			<td><span id="personAbout"/></td>
+		</tr>
+		<tr>
+			<td><span id="personLocation"/></td>
+		</tr>
+	</table>
+	</center>
+
+
+	<script type="text/javascript">
+	function fillProfile( profile ) {
+	    $('#personName').text(profile.entry[0].displayName);
+		$('#personImage').attr('src', profile.entry[0].thumbnailUrl + "?s=120") ;
+	    $('#personPhone').text(profile.entry[0].phoneNumbers[0].value);
+	    $('#personAbout').html(profile.entry[0].aboutMe);
+	    $('#personLocation').html(profile.entry[0].currentLocation);
+
+	    $('#personMail').text(profile.entry[0].emails[0].value);
+	    $('#personMailUrl').attr('href', 'mailto:' + profile.entry[0].emails[0].value);
+
+	
+	    $('#personUrlTitle').text(profile.entry[0].urls[0].title);
+	    $('#personUrl').attr('href', profile.entry[0].urls[0].value);
+	}
+	</script>
+ 
+	 <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+	 <script>
+     	var personHash = CryptoJS.MD5("");
+		var url = "https://www.gravatar.com/" + personHash + ".json?callback=fillProfile" ;
+		
+		$.getScript(url) ;
+	 </script>
+ 
+	</div>
+</body>
+</html>

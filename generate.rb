@@ -90,6 +90,7 @@ end
 JekyllImport::Importers::CaimitoRSS.run({
   "source" => [ "http://www.stephan-schwab.com/agile-en.xml", 
                 "http://www.stephan-schwab.com/agile-de.xml",
-                "http://www.agile-is-limit.de/feed/" 
+                "http://www.agile-is-limit.de/feed/",
+                "http://www.trustartist.com/feed"
               ]
 })

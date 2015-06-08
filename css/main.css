@@ -1,0 +1,24 @@
+.personName {
+	font-size: smaller;
+}
+
+TABLE.article {
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+}
+
+TABLE.article TR {
+	vertical-align: top;
+}
+
+TABLE.article .title {
+	font-weight: bold;
+}
+
+TABLE.article IMG {
+	margin-right: 15px;
+}
+
+TABLE.authorProfile IMG {
+	margin-right: 15px;
+}
